@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Added title -->
+        <h1 class="app-title">SwiftKeyz</h1>
+        
+        <div class="header">
+            <div class="timer">Time: <span id="time">30</span>s</div>
+            <div class="live-stats">
+                <div class="stat">WPM: <span id="liveWpm">0</span></div>
+                <div class="stat">Accuracy: <span id="liveAccuracy">0</span>%</div>
+            </div>
+        </div>
+        
+        <!-- Word container centered -->
+        <div class="word-container-wrapper">
+            <div class="word-container" id="wordContainer"></div>
+        </div>
+        
+        <!-- Moved mode selector below words -->
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="words">Words</button>
+            <button class="mode-btn" data-mode="quotes">Quotes</button>
+            <button class="mode-btn" data-mode="numbers">Numbers</button>
+        </div>
+        
+        <input type="text" class="input-field" id="inputField" autocomplete="off">
+        
+        <div class="results" id="results">
+            <h2 class="results-title">Test Results</h2>
+            <div class="result-stats">
+                <div class="result-stat">
+                    <div class="result-value" id="wpm">0</div>
+                    <div class="result-label">WPM</div>
+                </div>
+                <div class="result-stat">
+                    <div class="result-value" id="accuracy">0</div>
+                    <div class="result-label">Accuracy</div>
+                </div>
+            </div>
+            <div class="detailed-stats">
+                <div class="detail">Correct: <span id="correct">0</span></div>
+                <div class="detail">Incorrect: <span id="incorrect">0</span></div>
+                <div class="detail">Characters: <span id="charsTyped">0</span></div>
+            </div>
+            <button class="button" id="restartBtn">Try Again</button>
+        </div>
+    </div>
+    
+    <div class="social-links">
+        <a href="https://github.com/NeelP31" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/neelpatel_.3/" target="_blank" class="social-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:np733279@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/neel-patel-3105np/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
